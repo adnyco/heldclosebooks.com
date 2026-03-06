@@ -458,6 +458,16 @@ footer {
   margin-bottom:0.4rem;
 }
 
+/* subtle floating motion */
+.error-number{
+  animation: drift 12s ease-in-out infinite;
+}
+
+@keyframes drift{
+  0%,100%{ transform:translateY(0); }
+  50%{ transform:translateY(-10px); }
+}
+
 .error-rule{
   width:46px;
   height:1px;
