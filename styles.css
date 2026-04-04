@@ -389,12 +389,19 @@ footer {
   flex-direction: column;
 }
 
+/* Header sits on bone background here, not the dark hero —
+   override the near-white colors used on index.html */
+.error-page .header-right {
+  color: var(--ink-mid);
+}
+
 .error-main {
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 6rem 3.5rem;
+  /* Top padding clears the absolute-positioned header (~72px) */
+  padding: calc(72px + 5rem) 3.5rem 6rem;
 }
 
 .error-inner {
@@ -510,5 +517,5 @@ footer {
     padding: 2rem;
   }
 
-  .error-main { padding: 5rem 2rem; }
+  .error-main { padding: calc(72px + 3rem) 2rem 4rem; }
 }
