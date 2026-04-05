@@ -35,6 +35,9 @@ body{
   font-family:var(--font-body);
   overflow-x:hidden;-webkit-font-smoothing:antialiased;
 }
+/* Prevent orphans and awkward breaks globally */
+h1,h2,h3,h4,h5,h6{text-wrap:balance}
+p{text-wrap:pretty}
 body::after{
   content:'';position:fixed;inset:0;
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.028'/%3E%3C/svg%3E");
@@ -42,10 +45,14 @@ body::after{
 }
 
 /* ─── FOCUS ─── */
+/* Double ring: gold outline + currentColor fallback for forced-colors/high-contrast modes */
 :focus-visible{
-  outline:2px solid var(--gold);
-  outline-offset:3px;
+  outline:3px solid var(--gold);
+  outline-offset:4px;
   border-radius:1px;
+  /* Forced-colors (Windows High Contrast) ignores custom colors;
+     box-shadow carries the visible ring in those contexts */
+  box-shadow:0 0 0 3px var(--gold), 0 0 0 6px currentColor;
 }
 
 /* ─── NAV ─── */
