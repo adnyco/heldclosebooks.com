@@ -1,62 +1,81 @@
-/* year */
-document.querySelectorAll('.footer-year').forEach(e=>e.textContent=new Date().getFullYear());
-
-/* mobile nav */
-const burger=document.getElementById('navburger');
-const navlinks=document.getElementById('navlinks');
-burger?.addEventListener('click',()=>{
-  const o=navlinks.classList.toggle('open');
-  burger.setAttribute('aria-expanded',String(o));
+/* Footer year */
+document.querySelectorAll('.footer-year').forEach(el => {
+  el.textContent = new Date().getFullYear();
 });
-navlinks?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
-  navlinks.classList.remove('open');
-  burger?.setAttribute('aria-expanded','false');
-}));
 
-/* countdown */
-function tick(){
-  const diff=new Date('2026-04-15T00:00:00')-new Date();
-  if(diff<=0){
-    document.getElementById('countdown').innerHTML=
-      '<span class="cd-intro" style="font-size:.85rem;letter-spacing:.2em">Just Hold Her is available now — order at Amazon.</span>';
-    return;
-  }
-  const d=Math.floor(diff/864e5);
-  const h=Math.floor(diff%864e5/36e5);
-  const m=Math.floor(diff%36e5/6e4);
-  const s=Math.floor(diff%6e4/1e3);
-  const p=n=>String(n).padStart(2,'0');
-  document.getElementById('cd-d').textContent=d;
-  document.getElementById('cd-d').textContent=d;
-  document.getElementById('cd-h').textContent=p(h);
-  document.getElementById('cd-m').textContent=p(m);
-  document.getElementById('cd-s').textContent=p(s);
-}
-tick();setInterval(tick,1000);
+/* Mobile nav toggle */
+const burger = document.getElementById('navburger');
+const navlinks = document.getElementById('navlinks');
 
-/* praise carousel */
-const slides=[...document.querySelectorAll('.praise-slide')];
-const dots=[...document.querySelectorAll('.praise-dot')];
-let cur=0,praiseTimer;
-function goTo(n){
-  slides[cur].classList.remove('on');dots[cur].classList.remove('on');
-  dots[cur].setAttribute('aria-selected','false');
-  cur=(n+slides.length)%slides.length;
-  slides[cur].classList.add('on');dots[cur].classList.add('on');
-  dots[cur].setAttribute('aria-selected','true');
-}
-dots.forEach((d,i)=>d.addEventListener('click',()=>{
-  clearInterval(praiseTimer);
-  goTo(i);
-  praiseTimer=setInterval(()=>goTo(cur+1),5500);
-}));
-praiseTimer=setInterval(()=>goTo(cur+1),5500);
+burger?.addEventListener('click', () => {
+  const isOpen = navlinks.classList.toggle('open');
+  burger.setAttribute('aria-expanded', String(isOpen));
+});
 
-/* scroll reveal — adds .in to .js-fade elements */
-const revealObserver=new IntersectionObserver(entries=>{
-  entries.forEach(e=>{
-    if(e.isIntersecting) e.target.classList.add('in');
+navlinks?.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', () => {
+    navlinks.classList.remove('open');
+    burger?.setAttribute('aria-expanded', 'false');
   });
-},{threshold:0.08});
-document.querySelectorAll('.js-fade').forEach(el=>revealObserver.observe(el));
+});
 
+/* Scroll reveal */
+if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08 });
+
+  document.querySelectorAll('.js-fade').forEach(el => observer.observe(el));
+}
+
+/* Quote rotator — 8s auto-advance, pauses on hover/focus */
+(function () {
+  const slides = [...document.querySelectorAll('.rotator-slide')];
+  const dots = [...document.querySelectorAll('.rotator-dot')];
+  const prevBtn = document.querySelector('.rotator-btn--prev');
+  const nextBtn = document.querySelector('.rotator-btn--next');
+  const rotator = document.querySelector('.rotator');
+
+  if (!slides.length) return;
+
+  let current = 0;
+  let timer;
+
+  function goTo(n) {
+    slides[current].classList.remove('rotator-slide--active');
+    dots[current]?.classList.remove('rotator-dot--active');
+    dots[current]?.setAttribute('aria-selected', 'false');
+
+    current = (n + slides.length) % slides.length;
+
+    slides[current].classList.add('rotator-slide--active');
+    dots[current]?.classList.add('rotator-dot--active');
+    dots[current]?.setAttribute('aria-selected', 'true');
+  }
+
+  function startTimer() {
+    timer = setInterval(() => goTo(current + 1), 8000);
+  }
+
+  function resetTimer() {
+    clearInterval(timer);
+    startTimer();
+  }
+
+  prevBtn?.addEventListener('click', () => { goTo(current - 1); resetTimer(); });
+  nextBtn?.addEventListener('click', () => { goTo(current + 1); resetTimer(); });
+  dots.forEach((dot, i) => dot.addEventListener('click', () => { goTo(i); resetTimer(); }));
+
+  /* Pause on hover and focus-within */
+  rotator?.addEventListener('mouseenter', () => clearInterval(timer));
+  rotator?.addEventListener('mouseleave', startTimer);
+  rotator?.addEventListener('focusin', () => clearInterval(timer));
+  rotator?.addEventListener('focusout', startTimer);
+
+  startTimer();
+})();

@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Held Close Books — Stories of Staying</title>
-  <meta name="description" content="Held Close Books is an independent literary imprint dedicated to stories of caregiving, witness, and the quiet endurance of love. Debut title: Just Hold Her by Judy Wright — a foster mother's memoir of medicine, caregiving, and the long nights between. Ebook April 15, 2026 · Print June 1, 2026." />
+  <title>Held Close Books | Just Hold Her by Judy Wright</title>
+  <meta name="description" content="Held Close Books presents Just Hold Her by Judy Wright, a literary memoir of foster care, medicine, caregiving, and the long nights of staying. Ebook available now. Print editions available for preorder, shipping June 1." />
   <link rel="canonical" href="https://heldclosebooks.com/" />
   <meta name="theme-color" content="#001428" />
 
@@ -12,8 +12,8 @@
   <meta property="og:type"        content="website" />
   <meta property="og:site_name"   content="Held Close Books" />
   <meta property="og:url"         content="https://heldclosebooks.com/" />
-  <meta property="og:title"       content="Just Hold Her — Judy Wright · Held Close Books" />
-  <meta property="og:description" content="A foster mother's memoir of medicine, caregiving, and the long nights between. Ebook April 15 · Print June 1, 2026." />
+  <meta property="og:title"       content="Just Hold Her by Judy Wright | Held Close Books" />
+  <meta property="og:description" content="A foster mother's memoir of medicine, caregiving, and the long nights together. Ebook available now. Print editions available for preorder, shipping June 1." />
   <meta property="og:image"       content="https://heldclosebooks.com/img/just-hold-her_book_cover.png" />
   <meta property="og:image:width"  content="800" />
   <meta property="og:image:height" content="1280" />
@@ -21,8 +21,8 @@
 
   <!-- Twitter / X Card -->
   <meta name="twitter:card"        content="summary_large_image" />
-  <meta name="twitter:title"       content="Just Hold Her — Judy Wright · Held Close Books" />
-  <meta name="twitter:description" content="A foster mother's memoir of medicine, caregiving, and the long nights between. Ebook April 15 · Print June 1, 2026." />
+  <meta name="twitter:title"       content="Just Hold Her by Judy Wright | Held Close Books" />
+  <meta name="twitter:description" content="A foster mother's memoir of medicine, caregiving, and the long nights together. Ebook available now. Print editions available for preorder, shipping June 1." />
   <meta name="twitter:image"       content="https://heldclosebooks.com/img/just-hold-her_book_cover.png" />
   <meta name="twitter:image:alt"   content="Book cover of Just Hold Her by Judy Wright" />
 
@@ -41,42 +41,26 @@
         "@id": "https://heldclosebooks.com/#publisher",
         "name": "Held Close Books",
         "url": "https://heldclosebooks.com",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://heldclosebooks.com/img/held-close-books_logo.png"
-        },
-        "description": "An independent literary imprint dedicated to stories of caregiving, witness, and the quiet endurance of love."
+        "logo": { "@type": "ImageObject", "url": "https://heldclosebooks.com/img/held-close-books_logo.png" },
+        "description": "An independent literary imprint devoted to stories of caregiving, witness, and staying."
       },
       {
         "@type": "Book",
         "@id": "https://heldclosebooks.com/#book",
         "name": "Just Hold Her",
-        "alternativeHeadline": "A Foster Mother's Memoir of Medicine, Caregiving, and the Long Nights Between",
-        "author": {
-          "@type": "Person",
-          "name": "Judy Wright"
-        },
+        "alternativeHeadline": "A Foster Mother's Memoir of Medicine, Caregiving, and the Long Nights Together",
+        "author": { "@type": "Person", "name": "Judy Wright" },
         "publisher": { "@id": "https://heldclosebooks.com/#publisher" },
-        "bookFormat": "EBook",
+        "bookFormat": ["EBook", "Paperback", "Hardcover"],
         "datePublished": "2026-04-15",
         "genre": ["Memoir", "Biography", "Caregiving", "Literary Nonfiction"],
         "inLanguage": "en",
         "image": "https://heldclosebooks.com/img/just-hold-her_book_cover.png",
         "url": "https://www.amazon.com/dp/B0GRKVF8MV",
         "offers": [
-          {
-            "@type": "Offer",
-            "name": "Ebook",
-            "availability": "https://schema.org/PreOrder",
-            "availabilityStarts": "2026-04-15",
-            "url": "https://www.amazon.com/dp/B0GRKVF8MV"
-          },
-          {
-            "@type": "Offer",
-            "name": "Paperback",
-            "availability": "https://schema.org/PreOrder",
-            "availabilityStarts": "2026-06-01"
-          }
+          { "@type": "Offer", "name": "Ebook", "availability": "https://schema.org/InStock", "url": "https://www.amazon.com/dp/B0GRKVF8MV" },
+          { "@type": "Offer", "name": "Paperback", "availability": "https://schema.org/PreOrder", "availabilityStarts": "2026-06-01" },
+          { "@type": "Offer", "name": "Hardcover", "availability": "https://schema.org/PreOrder", "availabilityStarts": "2026-06-01" }
         ]
       }
     ]
@@ -88,37 +72,40 @@
 <body>
 <script>document.documentElement.classList.remove('no-js')</script>
 
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
 <!-- NAV -->
-<nav id="nav" role="navigation" aria-label="Site navigation">
+<nav id="nav" aria-label="Site navigation">
   <a href="/" class="nav-brand" aria-label="Held Close Books home">
     <div class="nav-logo">
       <picture>
         <source srcset="img/held-close-books_logo.avif" type="image/avif">
         <source srcset="img/held-close-books_logo.webp" type="image/webp">
-        <img src="img/held-close-books_logo.png" alt="Held Close Books" width="34" height="34">
+        <img src="img/held-close-books_logo.png" alt="" width="34" height="34" aria-hidden="true">
       </picture>
     </div>
     <span class="nav-wordmark">Held Close Books</span>
   </a>
-  <ul class="nav-links" id="navlinks" role="list">
-    <li><a href="#book">The Book</a></li>
-    <li><a href="#imprint">The Imprint</a></li>
-    <li><a href="#author">Author</a></li>
-    <li><a href="#impact">Impact</a></li>
-    <li><a href="#news">News</a></li>
-    <li><a href="https://www.amazon.com/dp/B0GRKVF8MV" target="_blank" rel="noopener noreferrer" class="nav-preorder">Order</a></li>
+  <ul class="nav-links" id="navlinks">
+    <li><a href="#book">Book</a></li>
+    <!--li><a href="#author">Judy Wright</a></li-->
+    <!--li><a href="#impact">Impact</a></li-->
+    <li><a href="#imprint">Imprint</a></li>
+    <!--li><a href="#notebook">Notebook</a></li-->
+    <li><a href="#press">Press</a></li>
+    <li><a href="https://www.amazon.com/dp/B0GRKVF8MV" target="_blank" rel="noopener noreferrer" class="nav-cta">Buy Ebook</a></li>
   </ul>
-  <button class="nav-burger" id="navburger" aria-expanded="false" aria-controls="navlinks" aria-label="Toggle navigation">
-    <svg width="22" height="16" viewBox="0 0 22 16" fill="none">
+  <button class="nav-burger" id="navburger" aria-expanded="false" aria-controls="navlinks" aria-label="Toggle navigation menu">
+    <svg width="22" height="16" viewBox="0 0 22 16" fill="none" aria-hidden="true">
       <line x1="0" y1="2" x2="22" y2="2" stroke="currentColor" stroke-width="1.5"/>
       <line x1="0" y1="14" x2="22" y2="14" stroke="currentColor" stroke-width="1.5"/>
     </svg>
   </button>
 </nav>
 
-<!-- HERO -->
+<!-- ═══════════════════════ HERO ═══════════════════════ -->
 <main id="main-content">
-<section class="hero" aria-label="Just Hold Her debut release">
+<section class="hero" aria-label="Just Hold Her — now available">
   <div class="hero-glow" aria-hidden="true"></div>
   <div class="hero-lines" aria-hidden="true"></div>
   <div class="hero-inner">
@@ -131,76 +118,39 @@
       </picture>
     </div>
     <div class="hero-text">
-      <p class="hero-eyebrow">Debut Release · Held Close Books</p>
-      <h1 class="hero-title">Just Hold Her<em>A Literary Memoir of Presence</em></h1>
-      <p class="hero-hook">"Would you, please… just hold her until she dies?"</p>
-      <div class="hero-releases">
-        <div class="hero-release">
-          <span class="hero-rl">Ebook</span>
-          <span class="hero-rd">April 15, 2026</span>
-          <span class="hero-rf">Kindle · Apple Books · Kobo</span>
-        </div>
-        <div class="hero-release">
-          <span class="hero-rl">Print</span>
-          <span class="hero-rd">June 1, 2026</span>
-          <span class="hero-rf">Paperback · Hardcover</span>
-        </div>
-      </div>
+      <p class="hero-eyebrow">Held Close Books</p>
+      <h1 class="hero-title">Just Hold Her</h1>
+      <p class="hero-subtitle">A literary memoir of foster care, medicine, and the quiet work of&nbsp;staying.</p>
+      <p class="hero-byline">by Judy Wright</p>
+      <p class="hero-availability">Ebook available now. Paperback and hardcover available for preorder, shipping June&nbsp;1.</p>
+      <p class="hero-credibility">#1 New Release on Amazon — Adoption</p>
       <div class="hero-ctas">
-        <a href="https://www.amazon.com/dp/B0GRKVF8MV" target="_blank" rel="noopener noreferrer" class="btn btn-gold">Order Now →</a>
-        <a href="#book" class="btn btn-ghost-light">Learn More ↓</a>
+        <a href="https://www.amazon.com/dp/B0GRKVF8MV" target="_blank" rel="noopener noreferrer" class="btn btn-gold">Buy Ebook Now</a>
+        <a href="#book" class="btn btn-ghost-light">Explore the Book</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- COUNTDOWN -->
-<div class="countdown" id="countdown" aria-label="Countdown to ebook launch on April 15, 2026">
-  <span class="cd-intro">Ebook launches in</span>
-  <div class="cd-units">
-    <div class="cd-unit">
-      <span class="cd-num" id="cd-d">--</span>
-      <span class="cd-lbl">Days</span>
-    </div>
-    <span class="cd-sep" aria-hidden="true">·</span>
-    <div class="cd-unit">
-      <span class="cd-num" id="cd-h">--</span>
-      <span class="cd-lbl">Hours</span>
-    </div>
-    <span class="cd-sep" aria-hidden="true">·</span>
-    <div class="cd-unit">
-      <span class="cd-num" id="cd-m">--</span>
-      <span class="cd-lbl">Min</span>
-    </div>
-    <span class="cd-sep" aria-hidden="true">·</span>
-    <div class="cd-unit">
-      <span class="cd-num" id="cd-s">--</span>
-      <span class="cd-lbl">Sec</span>
-    </div>
-  </div>
-  <span class="cd-outro">April 15, 2026</span>
-</div>
-
-<hr class="divider" />
-
-<!-- THE BOOK -->
-<section id="book">
-  <div class="book-wrap">
-    <p class="eyebrow js-fade">The Book</p>
+<!-- ═══════════════════════ BOOK ═══════════════════════ -->
+<section id="book" class="section">
+  <div class="container">
+    <p class="eyebrow js-fade">The Memoir</p>
     <div class="book-grid js-fade d1">
       <div class="book-body">
-        <h2 class="book-h2">A foster mother's nightwatch.<br><em>Built from the notebooks.</em></h2>
-        <p>That was the call. Two months old. Four pounds. Blind, deaf, and tethered to monitors, Jayden arrived with twenty-seven diagnoses and no plan. They didn't ask us to save her. They asked us to stay.</p>
+        <h2 class="section-heading">A witness story shaped in two-hour&nbsp;increments.</h2>
+        <p>When Judy Wright received the call, she was not asked to save a child. She was asked to hold her until she&nbsp;died.</p>
+        <p>Instead, a long vigil&nbsp;began.</p>
         <div class="book-pull">
-          &#8220;Michigan Foster Parents of the Year — for sustained commitment to medically fragile and high-need children in Oakland County, Michigan.&#8221;
-          <cite>— Michigan Supreme Court – State Award, 2012</cite>
+          &ldquo;Michigan Foster Parents of the Year — for sustained commitment to medically fragile and high-need children in Oakland County,&nbsp;Michigan.&rdquo;
+          <cite>Michigan Supreme Court · State Award,&nbsp;2012</cite>
         </div>
-        <p><em>Just Hold Her</em> is the relentless, true story of a foster mother's 674-day nightwatch. Built from the spiral notebooks kept during a two-year vigil, Judy Wright's literary debut captures the collision of medicine, bureaucracy, and human attachment.</p>
-        <p>In a house governed by two-hour feeding cycles and the shrill cry of medical alarms, Judy traded "big hope" for small mercies. While the system prepared for the end, morning kept arriving — and with it, the quiet defiance of ordinary labor: warming the bottle, checking the numbers, and asking the one question no one else was still asking.</p>
-        <p>This is not a rescue story. It is a witness story. A memoir for the caregivers, the foster parents, and the medical staff who live at the edge of what medicine can do. For anyone who has carried responsibility without certainty, or learned that faith arrives not as a guarantee, but as presence.</p>
-        <p class="book-comp">Readers of <em>When Breath Becomes Air</em>, <em>The Bright Hour</em>, and <em>Being Mortal</em> will find a new companion in this debut memoir.</p>
+        <p><em>Just Hold Her</em> is drawn from Judy's contemporaneous spiral notebooks during nearly two years of caring for a medically fragile foster child whose life was never expected to&nbsp;last. In a house governed by feedings, glucose readings, insulin, appointments, and alarms, daily care became both discipline and&nbsp;devotion.</p>
+        <p>This is a memoir of foster care, maternal presence, and the friction between lived experience and institutional certainty. It moves through medicine, bureaucracy, attachment, and the quiet endurance required to stay when no one can promise the&nbsp;outcome.</p>
+        <p>It is not a rescue story. It is a witness&nbsp;story.</p>
+        <p class="book-comp">Readers of <em>When Breath Becomes Air</em>, <em>The Bright Hour</em>, and <em>Being Mortal</em> will find a new companion in this debut&nbsp;memoir.</p>
       </div>
-      <div class="book-sidebar">
+      <aside class="book-sidebar js-fade d2">
         <picture>
           <source srcset="img/just-hold-her_book_cover.avif" type="image/avif">
           <img src="img/just-hold-her_book_cover.png" alt="Just Hold Her cover" class="book-sidebar-cover" width="320" height="512">
@@ -209,102 +159,41 @@
           <p class="retailers-label">Available At</p>
           <div class="retailers">
             <a href="https://www.amazon.com/dp/B0GRKVF8MV" target="_blank" rel="noopener noreferrer" class="retailer">
-              <span><span class="retailer-name">Amazon</span><span class="retailer-fmt">Kindle · Paperback</span></span>
-              <span class="retailer-arr">→</span>
-            </a>
-            <a href="https://play.google.com/store/books" target="_blank" rel="noopener noreferrer" class="retailer">
-              <span><span class="retailer-name">Google Play Books</span><span class="retailer-fmt">Ebook</span></span>
-              <span class="retailer-arr">→</span>
-            </a>
-            <a href="https://www.barnesandnoble.com" target="_blank" rel="noopener noreferrer" class="retailer">
-              <span><span class="retailer-name">Barnes &amp; Noble</span><span class="retailer-fmt">Nook · Paperback</span></span>
-              <span class="retailer-arr">→</span>
+              <span><span class="retailer-name">Amazon</span><span class="retailer-fmt">Kindle · Paperback · Hardcover</span></span>
+              <span class="retailer-arr" aria-hidden="true">→</span>
             </a>
             <a href="https://books.apple.com" target="_blank" rel="noopener noreferrer" class="retailer">
               <span><span class="retailer-name">Apple Books</span><span class="retailer-fmt">Ebook</span></span>
-              <span class="retailer-arr">→</span>
+              <span class="retailer-arr" aria-hidden="true">→</span>
+            </a>
+            <a href="https://www.barnesandnoble.com" target="_blank" rel="noopener noreferrer" class="retailer">
+              <span><span class="retailer-name">Barnes &amp; Noble</span><span class="retailer-fmt">Nook · Paperback · Hardcover</span></span>
+              <span class="retailer-arr" aria-hidden="true">→</span>
             </a>
             <a href="https://www.kobo.com" target="_blank" rel="noopener noreferrer" class="retailer">
               <span><span class="retailer-name">Kobo</span><span class="retailer-fmt">Ebook</span></span>
-              <span class="retailer-arr">→</span>
+              <span class="retailer-arr" aria-hidden="true">→</span>
+            </a>
+            <a href="https://play.google.com/store/books" target="_blank" rel="noopener noreferrer" class="retailer">
+              <span><span class="retailer-name">Google Play Books</span><span class="retailer-fmt">Ebook</span></span>
+              <span class="retailer-arr" aria-hidden="true">→</span>
             </a>
           </div>
         </div>
         <div class="golden-note">
-          <p><strong>April 17, 2026</strong> — On Jayden's golden birthday, Held Close Books and Kairos Farm mark the anniversary of the 674-day vigil that inspired this memoir. The ebook launches two days prior, April 15.</p>
+          <p>Ebook available now. Print editions — paperback and hardcover — are open for preorder and ship beginning June&nbsp;1.</p>
         </div>
-      </div>
-    </div>
-
-    <!-- PRAISE -->
-    <div class="praise-wrap js-fade">
-      <p class="eyebrow">Early Praise</p>
-      <div class="praise-carousel" id="praise-carousel">
-        <div class="praise-slide on">
-          <p class="praise-q">A fantastic read. A true testament to modern medicine, unconditional love, and compassion. I could not put it down.</p>
-          <p class="praise-by"><strong>Linda Thulin</strong> — Nurse, Caregiver, Mother</p>
-        </div>
-        <div class="praise-slide">
-          <p class="praise-q">You feel every emotion in this book. I found myself holding my breath at times. I had tears at times. This is a wonderful read.</p>
-          <p class="praise-by">Jeannette Cunningham — Medical Professional, Mother</p>
-        </div>
-        <div class="praise-slide">
-          <p class="praise-q">I’ve loved reading every word and look forward to more!</p>
-          <p class="praise-by">Whitney Mannering — Educator</p>
-        </div>
-      </div>
-      <div class="praise-dots" role="tablist" aria-label="Browse praise">
-        <button class="praise-dot on" data-i="0" aria-label="Slide 1" role="tab"></button>
-        <button class="praise-dot" data-i="1" aria-label="Slide 2" role="tab"></button>
-        <button class="praise-dot" data-i="2" aria-label="Slide 3" role="tab"></button>
-      </div>
+      </aside>
     </div>
   </div>
 </section>
 
-<hr class="divider" />
+<hr class="divider" aria-hidden="true" />
 
-<!-- THE IMPRINT -->
-<section id="imprint">
-  <div class="imprint-wrap">
-    <div class="js-fade">
-      <p class="eyebrow" style="color:var(--amber)">The Imprint</p>
-      <h2 class="imprint-h2">The Architecture<br>of Presence.<br><em>Stories found in the margins.</em></h2>
-      <div class="imprint-body">
-        <p>Held Close Books is an independent literary imprint dedicated to stories of caregiving, witness, and the quiet endurance of love. We publish a small number of deeply personal works — narratives born from lived experience, written from the inside of life's most difficult and most ordinary moments.</p>
-        <p>Our purpose is singular: to reclaim the narrative of caregiving from institutional protocol and return it to the people who actually do the work. We publish the stories that live in the margins of clinical charts and court records, in the spiral notebooks kept at two in the morning.</p>
-      </div>
-      <div class="imprint-note">
-        <p>We are a curated imprint with an intentionally small list. We are not accepting unsolicited manuscripts at this time. Inquiries may be directed to the media contact below.</p>
-      </div>
-    </div>
-    <div class="values-col js-fade d1">
-      <div class="value-row">
-        <span class="value-n">01</span>
-        <div><strong class="value-title">Presence Over Performance</strong><span class="value-desc">The most meaningful acts are often the quietest. We publish the literature of staying.</span></div>
-      </div>
-      <div class="value-row">
-        <span class="value-n">02</span>
-        <div><strong class="value-title">Witness Over Heroism</strong><span class="value-desc">Stories that observe honestly rather than glorify. The record matters more than the rescue.</span></div>
-      </div>
-      <div class="value-row">
-        <span class="value-n">03</span>
-        <div><strong class="value-title">Literary Integrity</strong><span class="value-desc">Voice matters. Craft matters. Truth matters. We do not publish books that compromise any of the three.</span></div>
-      </div>
-      <div class="value-row">
-        <span class="value-n">04</span>
-        <div><strong class="value-title">Compassion Without Sentimentality</strong><span class="value-desc">Honesty over spectacle. Lived authority over abstraction.</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<hr class="divider-dark" />
-
-<!-- AUTHOR -->
-<section id="author">
-  <div class="author-wrap">
-    <p class="eyebrow js-fade">Author</p>
+<!-- ═══════════════════════ AUTHOR ═══════════════════════ -->
+<section id="author" class="section section--bone-dark">
+  <div class="container">
+    <p class="eyebrow js-fade">About the Author</p>
     <div class="author-grid js-fade d1">
       <aside class="author-sidebar">
         <div class="author-photo">
@@ -317,43 +206,49 @@
           </picture>
         </div>
         <p class="author-name">Judy Wright</p>
-        <p class="author-role">Author · Foster Mother · Advocate</p>
+        <p class="author-role">Mother · Foster Mother · Advocate</p>
       </aside>
       <div class="author-body">
-        <p>Judy Wright is a foster mother, caregiver, and advocate whose life has been shaped by the demanding, ordinary work of staying. She met her husband, John, through aviation. He was a flight instructor, a Vietnam veteran, and later a corporate pilot whose career took him around the world. What bound them most deeply was a shared conviction that children mattered — not abstractly, but concretely, in the daily decisions of a household.</p>
-        <p>Over thirty-seven years of marriage, that conviction became the center of their life. They raised four children while navigating years of relocations tied to John's flying career. When their youngest was sixteen, Judy and John began fostering. What started as short-term placements grew into twelve years of long-term work inside Michigan's foster care system — caring for infants and toddlers whose lives had already been marked by instability, medical trauma, and loss. Over those years, they fostered more than fifty children, many of them medically fragile.</p>
-        <p>Their home became a place of readiness. Bins were labeled by size and season. Bassinets were carried up from the basement in the middle of the night. Judy learned to advocate inside systems that often failed to see children clearly, asking the same questions again and again, showing up when others did not, and loving without guarantees.</p>
-        <p>After John's death, Judy turned to writing — not to explain foster care or defend it, but to bear witness to what it costs and what it gives. <em>Just Hold Her</em> is drawn from the spiral notebooks she kept during a two-year vigil. It is not a story about saving. It is a story about staying.</p>
-        <div class="recognition">
-          <ul class="rec-list">
-            <li class="rec-item">
-              <span class="rec-title">Honorable Joan E. Young Award for Commitment to Children</span>
-              <span class="rec-org">Oakland County Board of Commissioners · 2012</span>
-            </li>
-            <li class="rec-item">
-              <span class="rec-title">Oakland County Foster Parents of the Year</span>
-              <span class="rec-org">Oakland County Board of Commissioners · 2012</span>
-            </li>
-            <li class="rec-item">
-              <span class="rec-title">Michigan Foster Parents of the Year</span>
-              <span class="rec-org">Michigan Supreme Court · 2012</span>
-            </li>
-            <li class="rec-item">
-              <span class="rec-title">John and Judy Wright Scholarship for Foster Children</span>
-              <span class="rec-org">Ennis Center for Children</span>
-            </li>
-          </ul>
+        <p>Judy Wright is a mother and foster mother whose life has been shaped by the demanding, ordinary work of&nbsp;staying.</p>
+        <p>Over twelve years in Oakland County, Michigan, Judy and her late husband John fostered fifty-five children, many of them medically fragile. Their home became known for taking the calls that required steadiness, patience, and unusual&nbsp;care.</p>
+        <p><em>Just Hold Her</em> is her debut memoir, drawn from the notebooks she kept while caring for a foster child whose life was never expected to&nbsp;last.</p>
+
+        <div class="awards">
+          <h3 class="awards-heading">Recognition &amp; Legacy</h3>
+          <dl class="awards-list">
+            <div class="award">
+              <dt>Foster Parents of the&nbsp;Year</dt>
+              <dd class="award-org">Michigan Supreme Court · 2012</dd>
+            </div>
+            <div class="award">
+              <dt>Foster Parents of the&nbsp;Year</dt>
+              <dd class="award-org">Oakland County · 2012</dd>
+            </div>
+            <div class="award">
+              <dt>Proclamation Honoring Judy and John&nbsp;Wright</dt>
+              <dd class="award-org">Oakland County Board of Commissioners · 2013</dd>
+            </div>
+            <div class="award">
+              <dt>Award for Commitment to&nbsp;Children</dt>
+              <dd class="award-org">Honorable Joan E. Young · Circle of Light · 2012</dd>
+            </div>
+            <div class="award">
+              <dt>John &amp; Judy Wright&nbsp;Scholarship</dt>
+              <dd class="award-org">Ennis Center for Children</dd>
+            </div>
+          </dl>
         </div>
       </div>
     </div>
 
-    <div class="contributors js-fade">
+    <!-- TEAM -->
+    <div class="contributors js-fade d2">
       <p class="eyebrow">Editorial &amp; Creative Team</p>
       <div class="contrib-grid">
         <div class="contrib">
           <p class="contrib-name">Andrew Wright</p>
           <p class="contrib-role">Publisher · Editor</p>
-          <p class="contrib-bio">Andrew Wright is the founding editor and publisher of Held Close Books. He edited <em>Just Hold Her</em> in close collaboration with the author, shaping the manuscript from its journal origins while protecting the restraint and immediacy of Judy Wright's original voice.</p>
+          <p class="contrib-bio">Andrew Wright is the founding editor and publisher of Held Close Books. He edited <em>Just Hold Her</em> in close collaboration with the author, shaping the manuscript from its journal origins while protecting the restraint and immediacy of Judy Wright's original&nbsp;voice.</p>
         </div>
         <div class="contrib">
           <p class="contrib-name">Conor Gallogly</p>
@@ -363,31 +258,71 @@
         <div class="contrib">
           <p class="contrib-name">Stacie Doughtie</p>
           <p class="contrib-role">Proofreader</p>
-          <p class="contrib-bio">Stacie Doughtie served as proofreader for <em>Just Hold Her</em>, reading the completed manuscript with the close attention that protects a finished work from the errors no earlier stage can catch.</p>
+          <p class="contrib-bio">Stacie Doughtie served as proofreader for <em>Just Hold Her</em>, reading the completed manuscript with the close attention that protects a finished work from the errors no earlier stage can&nbsp;catch.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<hr class="divider" />
+<!-- ═══════════════════ PRAISE (NAVY) ═══════════════════ -->
+<section id="praise" class="section section--navy" aria-label="Praise for Judy and John Wright">
+  <div class="container">
+    <div class="rotator js-fade" aria-roledescription="carousel" aria-label="Praise quotes">
+      <div class="rotator-stage" aria-live="polite">
+        <blockquote class="rotator-slide rotator-slide--active" role="group" aria-label="Quote 1 of 4">
+          <p>&ldquo;The wealth of a community can be measured by individuals like Judy and John&nbsp;Wright.&rdquo;</p>
+          <cite>Oakland County Board of&nbsp;Commissioners</cite>
+        </blockquote>
+        <blockquote class="rotator-slide" role="group" aria-label="Quote 2 of 4">
+          <p>&ldquo;It was noted in the nomination form that for this one child they attended 495 medical appointments in an 18-month time&nbsp;period.&rdquo;</p>
+          <cite>Chuck Ludwig, Director of CARE&nbsp;House</cite>
+        </blockquote>
+        <blockquote class="rotator-slide" role="group" aria-label="Quote 3 of 4">
+          <p>&ldquo;The foster family will stop at nothing to make sure the children placed in their home receive the utmost care and&nbsp;love.&rdquo;</p>
+          <cite>Ennis Center for&nbsp;Children</cite>
+        </blockquote>
+        <blockquote class="rotator-slide" role="group" aria-label="Quote 4 of 4">
+          <p>&ldquo;When others had given up, the Wrights did&nbsp;not.&rdquo;</p>
+          <cite>Oakland County Board of&nbsp;Commissioners</cite>
+        </blockquote>
+      </div>
+      <div class="rotator-controls">
+        <button class="rotator-btn rotator-btn--prev" aria-label="Previous quote">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M11 4L6 9l5 5" stroke="currentColor" stroke-width="1.2"/></svg>
+        </button>
+        <div class="rotator-dots" role="tablist" aria-label="Select quote">
+          <button class="rotator-dot rotator-dot--active" role="tab" aria-selected="true" aria-label="Quote 1"></button>
+          <button class="rotator-dot" role="tab" aria-selected="false" aria-label="Quote 2"></button>
+          <button class="rotator-dot" role="tab" aria-selected="false" aria-label="Quote 3"></button>
+          <button class="rotator-dot" role="tab" aria-selected="false" aria-label="Quote 4"></button>
+        </div>
+        <button class="rotator-btn rotator-btn--next" aria-label="Next quote">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M7 4l5 5-5 5" stroke="currentColor" stroke-width="1.2"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
 
-<!-- IMPACT -->
-<section id="impact">
-  <div class="impact-wrap">
+<!-- ═══════════════════════ IMPACT ═══════════════════════ -->
+<section id="impact" class="section">
+  <div class="container">
     <p class="eyebrow js-fade">Impact</p>
-    <div class="impact-grid">
-      <div class="js-fade d1">
-        <h2 class="impact-h2">Extending the Commitment.</h2>
-        <p>The work of <em>Just Hold Her</em> does not end with the book. Held Close Books and the Wright family are committed to ensuring that the story's legacy extends into tangible support for the children and communities it depicts.</p>
+    <div class="impact-grid js-fade d1">
+      <div class="impact-body">
+        <h2 class="section-heading">A story that continues beyond the&nbsp;page.</h2>
+        <p>At the center of this book is care — not only as feeling, but as practice. That ethic continues through the work connected to Judy and John Wright's&nbsp;legacy.</p>
         <div class="stats">
           <div><span class="stat-num">55+</span><span class="stat-lbl">Children fostered<br>by Judy &amp; John Wright</span></div>
           <div><span class="stat-num">674</span><span class="stat-lbl">Days of the vigil<br>documented in the memoir</span></div>
           <div><span class="stat-num">12</span><span class="stat-lbl">Years of foster care<br>in Michigan's system</span></div>
+          <div><span class="stat-num">495</span><span class="stat-lbl">Medical appointments<br>in an 18 month period</span></div>
+
         </div>
-        <p>In collaboration with the Ennis Center for Children, the John and Judy Wright Scholarship was established to support foster youth pursuing higher education. It is a direct extension of the conviction that has always animated the Wright household: that children matter, concretely, in the decisions that shape their futures.</p>
-        <p>A portion of proceeds from <em>Just Hold Her</em> supports the scholarship fund. Readers who wish to contribute directly may do so through the Ennis Center.</p>
-        <a href="https://www.enniscenter.org" target="_blank" class="btn btn-navy" style="margin-top:1.5rem;margin-bottom:2.5rem">Donate to Ennis Center →</a>
+        <p>The broader work surrounding <em>Just Hold Her</em> includes support for the John and Judy Wright Scholarship for Foster Children, created with Ennis Center for Children. The scholarship reflects the same values that shape this memoir: presence, dignity, and practical&nbsp;care.</p>
+        <p>A portion of proceeds from <em>Just Hold Her</em> supports the scholarship fund. Readers who wish to contribute directly may do so through the Ennis&nbsp;Center.</p>
+        <a href="https://www.enniscenter.org" target="_blank" rel="noopener noreferrer" class="btn btn-navy">Donate to Ennis Center</a>
       </div>
       <aside class="scholarship js-fade d2">
         <p class="schol-label">
@@ -398,77 +333,113 @@
           </svg>
           Note on the Scholarship
         </p>
-        <h3>The John and Judy Wright Scholarship for Foster Children</h3>
-        <p>Established in partnership with the Ennis Center for Children, the scholarship supports foster youth pursuing higher education in Michigan. It bears John Wright's name in recognition of the shared conviction that shaped their household for more than three decades.</p>
-        <p>John Wright passed away before the manuscript was complete. The memoir is, among other things, a record of what he helped build.</p>
-        <a href="http://jjwrightscholarship.com" target="_blank" class="btn btn-gold" style="width:100%;justify-content:center">Support the Scholarship →</a>
-        <div class="schol-divider"></div>
-        <!--p class="schol-fine">Ennis Center for Children<br>Michigan's Child Welfare Leaders</p-->
+        <h3>The John and Judy Wright Scholarship for Foster&nbsp;Children</h3>
+        <p>Established in partnership with the Ennis Center for Children, the scholarship supports foster youth pursuing higher education in Michigan. It bears John Wright's name in recognition of the shared conviction that shaped their household for more than three&nbsp;decades.</p>
+        <p>John Wright passed away before the manuscript was complete. The memoir is, among other things, a record of what he helped&nbsp;build.</p>
+        <a href="http://jjwrightscholarship.com" target="_blank" rel="noopener noreferrer" class="btn btn-gold btn--full">Support the Scholarship</a>
       </aside>
     </div>
   </div>
 </section>
 
-<hr class="divider" />
+<hr class="divider" aria-hidden="true" />
 
-<!-- NEWS -->
-<section id="news">
-  <div class="news-wrap">
-    <p class="eyebrow js-fade">News &amp; Updates</p>
-    <div class="news-cards js-fade d1">
-      <div class="news-card">
-        <p class="news-tag">Newsletter</p>
-        <h3>Join the Vigil.</h3>
-        <p>Receive launch updates, reader notes, and Judy's writing directly in your inbox. Subscribe on Substack — free and uncluttered.</p>
-        <a href="https://substack.com/@judywrightauthor" target="_blank" class="btn btn-gold" style="align-self:flex-start">Subscribe on Substack →</a>
+<!-- ═══════════════════════ IMPRINT ═══════════════════════ -->
+<section id="imprint" class="section section--navy">
+  <div class="container">
+    <div class="imprint-wrap">
+      <div class="js-fade">
+        <p class="eyebrow">The Imprint</p>
+        <h2 class="imprint-h2">The Architecture<br>of Presence.<br><em>Stories found in the&nbsp;margins.</em></h2>
+        <div class="imprint-body">
+          <p>Held Close Books is an independent literary imprint dedicated to stories of caregiving, witness, and the quiet endurance of&nbsp;love. We publish a small number of deeply personal works — narratives born from lived experience, written from the inside of life's most difficult and most ordinary&nbsp;moments.</p>
+          <p>Our purpose is singular: to reclaim the narrative of caregiving from institutional protocol and return it to the people who actually do the work. We publish the stories that live in the margins of clinical charts and court records, in the spiral notebooks kept at two in the&nbsp;morning.</p>
+        </div>
+        <div class="imprint-note">
+          <p>We are a curated imprint with an intentionally small list. We are not accepting unsolicited manuscripts at this time. Inquiries may be directed to the media contact&nbsp;below.</p>
+        </div>
       </div>
-      <div class="news-card news-dark">
-        <p class="news-tag">Press</p>
-        <h3>For Media &amp; Book Clubs.</h3>
-        <p>Press kits, advance review copies, and interview inquiries are available. Contact our media representative directly.</p>
-        <a href="mailto:press@heldclosebooks.com" class="btn btn-gold" style="align-self:flex-start">press@heldclosebooks.com →</a>
+      <div class="values-col js-fade d1">
+        <div class="value-row">
+          <span class="value-n">01</span>
+          <div><strong class="value-title">Presence Over Performance</strong><span class="value-desc">The most meaningful acts are often the quietest. We publish the literature of&nbsp;staying.</span></div>
+        </div>
+        <div class="value-row">
+          <span class="value-n">02</span>
+          <div><strong class="value-title">Witness Over Heroism</strong><span class="value-desc">Stories that observe honestly rather than glorify. The record matters more than the&nbsp;rescue.</span></div>
+        </div>
+        <div class="value-row">
+          <span class="value-n">03</span>
+          <div><strong class="value-title">Literary Integrity</strong><span class="value-desc">Voice matters. Craft matters. Truth matters. We do not publish books that compromise any of the&nbsp;three.</span></div>
+        </div>
+        <div class="value-row">
+          <span class="value-n">04</span>
+          <div><strong class="value-title">Compassion Without Sentimentality</strong><span class="value-desc">Honesty over spectacle. Lived authority over&nbsp;abstraction.</span></div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
-</main>
-<footer>
-  <div class="footer-grid">
-    <div class="footer-brand">
-      <a href="/" class="footer-logo-link" aria-label="Held Close Books home">
-        <picture>
-          <source srcset="img/held-close-books_logo.avif" type="image/avif">
-          <source srcset="img/held-close-books_logo.webp" type="image/webp">
-          <img src="img/held-close-books_logo.png" alt="Held Close Books" width="44" height="44" class="footer-logo">
-        </picture>
-      </a>
-      <p class="footer-brand-name">Held Close Books</p>
-      <p>An independent literary imprint dedicated to stories of caregiving, witness, and the quiet endurance of&nbsp;love.</p>
-    </div>
-    <div>
-      <p class="footer-col-title">Navigate</p>
-      <ul class="footer-links">
-        <li><a href="#book">The Book</a></li>
-        <li><a href="#imprint">The Imprint</a></li>
-        <li><a href="#author">Author</a></li>
-        <li><a href="#impact">Impact</a></li>
-        <li><a href="#news">News</a></li>
-        <li><a href="https://www.amazon.com/dp/B0GRKVF8MV" target="_blank" rel="noopener noreferrer">Order →</a></li>
-      </ul>
-    </div>
-    <div class="footer-contact">
-      <p class="footer-col-title">Contact</p>
-      <p>Press, review copies &amp; media:</p>
-      <p><a href="mailto:press@heldclosebooks.com">press@heldclosebooks.com</a></p>
-      <p style="margin-top:1.4rem">General inquiries:</p>
-      <p><a href="mailto:hello@heldclosebooks.com">hello@heldclosebooks.com</a></p>
+<!-- ═══════════════════ NOTEBOOK & PRESS ═══════════════════ -->
+<section class="section section--bone-dark" aria-label="Newsletter and press">
+  <div class="container">
+    <div class="cards-grid js-fade">
+      <div class="card" id="notebook">
+        <p class="eyebrow">Judy's Notebook</p>
+        <h3 class="card-heading">Stay with the&nbsp;writing.</h3>
+        <p><em>Just Hold Her</em> is the memoir. Judy's Notebook is where the writing continues. Subscribe for reflections, notes, and new work from Judy delivered by&nbsp;email.</p>
+        <a href="https://substack.com/@judywrightauthor" target="_blank" rel="noopener noreferrer" class="btn btn-gold">Subscribe by Email</a>
+      </div>
+      <div class="card card--dark" id="press">
+        <p class="eyebrow">Press</p>
+        <h3 class="card-heading">For interviews, events, and book&nbsp;coverage.</h3>
+        <p>Held Close Books welcomes inquiries from journalists, podcasters, producers, booksellers, event organizers, and book clubs interested in <em>Just Hold Her</em> and Judy Wright's&nbsp;story.</p>
+        <a href="mailto:press@heldclosebooks.com" class="btn btn-gold">Press Inquiries</a>
+      </div>
     </div>
   </div>
-  <div class="footer-bottom">
-    <p class="footer-legal">© <span class="footer-year">2026</span> Held Close Books · All rights reserved</p>
-    <p class="footer-legal"><a href="https://justholdher.com" target="_blank">justholdher.com</a></p>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="footer-logo-link" aria-label="Held Close Books home">
+          <picture>
+            <source srcset="img/held-close-books_logo.avif" type="image/avif">
+            <source srcset="img/held-close-books_logo.webp" type="image/webp">
+            <img src="img/held-close-books_logo.png" alt="" width="44" height="44" class="footer-logo" aria-hidden="true">
+          </picture>
+        </a>
+        <p class="footer-brand-name">Held Close Books</p>
+        <p class="footer-tagline">An independent literary imprint publishing stories of caregiving, witness, and&nbsp;staying.</p>
+      </div>
+      <div>
+        <p class="footer-col-title">Navigate</p>
+        <ul class="footer-links">
+          <li><a href="https://www.amazon.com/dp/B0GRKVF8MV" target="_blank" rel="noopener noreferrer">Buy the Book</a></li>
+          <li><a href="#author">About Judy</a></li>
+          <li><a href="#notebook">Judy's Notebook</a></li>
+          <li><a href="#impact">Scholarship</a></li>
+          <li><a href="#press">Press</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <p class="footer-col-title">Contact</p>
+        <p class="footer-contact-label">General inquiries</p>
+        <p><a href="mailto:hello@heldclosebooks.com">hello@heldclosebooks.com</a></p>
+        <p class="footer-contact-label footer-contact-label--spaced">Press inquiries</p>
+        <p><a href="mailto:press@heldclosebooks.com">press@heldclosebooks.com</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-legal">&copy; <span class="footer-year">2026</span> Held Close Books &middot; All rights reserved</p>
+      <p class="footer-closing">The story lives in the book. The writing continues&nbsp;here.</p>
+    </div>
   </div>
 </footer>
 
